@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/komal/Projects/GreetingApp/BusinessLayer/BusinessLayer.csproj": {}
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/BusinessLayer/BusinessLayer.csproj": {}
   },
   "projects": {
-    "/Users/komal/Projects/GreetingApp/BusinessLayer/BusinessLayer.csproj": {
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/BusinessLayer/BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/komal/Projects/GreetingApp/BusinessLayer/BusinessLayer.csproj",
+        "projectUniqueName": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/BusinessLayer/BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "/Users/komal/Projects/GreetingApp/BusinessLayer/BusinessLayer.csproj",
+        "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/BusinessLayer/BusinessLayer.csproj",
         "packagesPath": "/Users/komal/.nuget/packages/",
-        "outputPath": "/Users/komal/Projects/GreetingApp/BusinessLayer/obj/",
+        "outputPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/BusinessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/komal/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj": {
-                "projectPath": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj"
+              "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj": {
+                "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj"
               },
-              "/Users/komal/Projects/GreetingApp/RepositoryLayer/RepositoryLayer.csproj": {
-                "projectPath": "/Users/komal/Projects/GreetingApp/RepositoryLayer/RepositoryLayer.csproj"
+              "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/RepositoryLayer.csproj": {
+                "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/RepositoryLayer.csproj"
               }
             }
           }
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,23 +55,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj": {
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj",
+        "projectUniqueName": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj",
+        "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj",
         "packagesPath": "/Users/komal/.nuget/packages/",
-        "outputPath": "/Users/komal/Projects/GreetingApp/ModelLayer/obj/",
+        "outputPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/komal/.nuget/NuGet/NuGet.Config"
@@ -97,11 +102,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -118,23 +118,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/komal/Projects/GreetingApp/RepositoryLayer/RepositoryLayer.csproj": {
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/komal/Projects/GreetingApp/RepositoryLayer/RepositoryLayer.csproj",
+        "projectUniqueName": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "/Users/komal/Projects/GreetingApp/RepositoryLayer/RepositoryLayer.csproj",
+        "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/RepositoryLayer.csproj",
         "packagesPath": "/Users/komal/.nuget/packages/",
-        "outputPath": "/Users/komal/Projects/GreetingApp/RepositoryLayer/obj/",
+        "outputPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/RepositoryLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/komal/.nuget/NuGet/NuGet.Config"
@@ -149,8 +159,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj": {
-                "projectPath": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj"
+              "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj": {
+                "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj"
               }
             }
           }
@@ -159,11 +169,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -186,12 +191,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,7 +12,19 @@ namespace HelloGreetingApplication.Controllers
     [Route("api/[controller]")]  // Fixed Route
     public class HelloGreetingController : ControllerBase
     {
+        //UC3  code
+        [HttpGet("PersonalizedGreeting")]
+        public IActionResult GetPersonalizedGreeting([FromQuery] string? firstName, [FromQuery] string? lastName)
+        {
+            var message = _greetingService.GetGreeting(firstName, lastName);
 
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Greeting retrieved successfully",
+                Data = message
+            });
+        }
         private static Dictionary<string, string> greetings = new Dictionary<string, string>();
 
         // UC2 - Service Layer

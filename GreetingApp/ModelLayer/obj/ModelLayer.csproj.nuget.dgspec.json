@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj": {}
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj": {}
   },
   "projects": {
-    "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj": {
+    "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj",
+        "projectUniqueName": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "/Users/komal/Projects/GreetingApp/ModelLayer/ModelLayer.csproj",
+        "projectPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/ModelLayer.csproj",
         "packagesPath": "/Users/komal/.nuget/packages/",
-        "outputPath": "/Users/komal/Projects/GreetingApp/ModelLayer/obj/",
+        "outputPath": "/Users/komal/Desktop/Greeting-GIT/GreetingApp/ModelLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/komal/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,12 +48,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     }

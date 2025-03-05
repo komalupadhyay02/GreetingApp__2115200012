@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{955D82BF-4864-414E-811D-8FBBE480ABF7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Context/GreetingDbContext.cs">
+    <Files>
+      <File FileName="GreetingApp/Controllers/GreetingController.cs" />
+      <File FileName="RepositoryLayer/Context/GreetingDbContext.cs" Line="24" Column="10" />
+      <File FileName="GreetingApp/Program.cs" />
+      <File FileName="GreetingApp/appsettings.json" Line="14" Column="4" />
+      <File FileName="BusinessLayer/Interface/IGreetingBL.cs" />
+      <File FileName="BusinessLayer/Service/GreetingBL.cs" />
+      <File FileName="RepositoryLayer/Entity/Greeting.cs" />
+      <File FileName="RepositoryLayer/Interface/IGreetingRL.cs" />
+      <File FileName="RepositoryLayer/Service/GreetingRL.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GreetingApp" expanded="True">
+            <Node name="GreetingApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="RepositoryLayer" expanded="True">
+              <Node name="Context" expanded="True">
+                <Node name="GreetingDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Service" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.GreetingApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

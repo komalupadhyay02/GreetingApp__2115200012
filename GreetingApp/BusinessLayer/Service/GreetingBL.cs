@@ -48,6 +48,10 @@ namespace BusinessLayer.Service
         {
             return await _greetingRL.GetGreetingByIdAsync(id);
         }
+        public async Task<Greeting> UpdateGreetingAsync(Greeting greeting)
+        {
+            return await _greetingRL.UpdateGreetingAsync(greeting);
+        }
 
     }
 }

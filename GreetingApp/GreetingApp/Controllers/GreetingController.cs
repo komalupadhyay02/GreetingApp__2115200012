@@ -186,6 +186,41 @@ namespace HelloGreetingApplication.Controllers
                 Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
             });
         }
+        //UC7
+        [HttpPut("EditGreeting/{id}")]
+        public async Task<IActionResult> EditGreeting(int id, [FromBody] Greeting updatedGreeting)
+        {
+            if (updatedGreeting == null || string.IsNullOrWhiteSpace(updatedGreeting.Message))
+            {
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Greeting message cannot be empty.",
+                    Data = null
+                });
+            }
+
+            var existingGreeting = await _greetingService.GetGreetingByIdAsync(id);
+            if (existingGreeting == null)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"Greeting with ID {id} not found.",
+                    Data = null
+                });
+            }
+
+            existingGreeting.Message = updatedGreeting.Message;
+            var result = await _greetingService.UpdateGreetingAsync(existingGreeting);
+
+            return Ok(new ResponseModel<Greeting>
+            {
+                Success = true,
+                Message = "Greeting updated successfully.",
+                Data = result
+            });
+        }
 
         /// <summary>
         /// UC1 - HTTP PUT: Update Greeting

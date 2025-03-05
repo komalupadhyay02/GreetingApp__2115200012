@@ -29,6 +29,12 @@ namespace RepositoryLayer.Service
         {
             return await _context.Greetings.FindAsync(id);
         }
+        public async Task<Greeting> UpdateGreetingAsync(Greeting greeting)
+        {
+            _context.Greetings.Update(greeting);
+            await _context.SaveChangesAsync();
+            return greeting;
+        }
 
 
         /// <summary>

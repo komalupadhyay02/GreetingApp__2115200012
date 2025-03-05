@@ -52,6 +52,10 @@ namespace BusinessLayer.Service
         {
             return await _greetingRL.UpdateGreetingAsync(greeting);
         }
+        public async Task DeleteGreetingAsync(int id)
+        {
+            await _greetingRL.DeleteGreetingAsync(id);
+        }
 
     }
 }

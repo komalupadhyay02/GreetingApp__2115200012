@@ -269,6 +269,31 @@ namespace HelloGreetingApplication.Controllers
                 Data = $"Key: {key}, Value: {greetings[key]}"
             });
         }
+        //UC8
+        [HttpDelete("DeleteGreeting/{id}")]
+        public async Task<IActionResult> DeleteGreeting(int id)
+        {
+            var existingGreeting = await _greetingService.GetGreetingByIdAsync(id);
+            if (existingGreeting == null)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"Greeting with ID {id} not found.",
+                    Data = null
+                });
+            }
+
+            await _greetingService.DeleteGreetingAsync(id);
+
+            return Ok(new ResponseModel<string>
+            {
+                Success = true,
+                Message = $"Greeting with ID {id} has been deleted successfully.",
+                Data = null
+            });
+        }
+
 
 
         /// <summary>

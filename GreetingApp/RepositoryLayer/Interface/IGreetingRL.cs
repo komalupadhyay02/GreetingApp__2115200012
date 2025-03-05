@@ -12,6 +12,8 @@ namespace RepositoryLayer.Interface
         Greeting SaveGreeting(Greeting greeting); // Add this method
         Task<Greeting> GetGreetingByIdAsync(int id);
         Task<Greeting> UpdateGreetingAsync(Greeting greeting);
+        Task DeleteGreetingAsync(int id);
+
 
 
 

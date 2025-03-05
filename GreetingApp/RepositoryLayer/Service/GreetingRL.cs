@@ -35,6 +35,16 @@ namespace RepositoryLayer.Service
             await _context.SaveChangesAsync();
             return greeting;
         }
+        public async Task DeleteGreetingAsync(int id)
+        {
+            var greeting = await _context.Greetings.FindAsync(id);
+            if (greeting != null)
+            {
+                _context.Greetings.Remove(greeting);
+                await _context.SaveChangesAsync();
+            }
+        }
+
 
 
         /// <summary>

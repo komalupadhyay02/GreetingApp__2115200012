@@ -24,6 +24,17 @@ namespace HelloGreetingApplication.Controllers
             _greetingService = greetingService;
         }
 
+        //UC5 code
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetGreetingById(int id)
+        {
+            var greeting = await _greetingService.GetGreetingByIdAsync(id);
+            if (greeting == null)
+            {
+                return NotFound($"Greeting with ID {id} not found.");
+            }
+            return Ok(greeting);
+        }
         //uc4 code
         [HttpGet("GetAllGreetings")]
         public async Task<IActionResult> GetAllGreetings()

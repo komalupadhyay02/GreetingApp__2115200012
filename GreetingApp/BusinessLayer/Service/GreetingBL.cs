@@ -15,7 +15,8 @@ namespace BusinessLayer.Service
         {
             _greetingRL = greetingRL;
         }
-
+       
+        
         // Basic greeting method
         public string GetGreeting()
         {
@@ -42,6 +43,10 @@ namespace BusinessLayer.Service
         public Greeting SaveGreeting(Greeting greeting)
         {
             return _greetingRL.SaveGreeting(greeting);
+        }
+        public async Task<Greeting> GetGreetingByIdAsync(int id)
+        {
+            return await _greetingRL.GetGreetingByIdAsync(id);
         }
     }
 }

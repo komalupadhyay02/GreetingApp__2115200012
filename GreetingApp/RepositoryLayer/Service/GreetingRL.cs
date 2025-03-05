@@ -25,7 +25,10 @@ namespace RepositoryLayer.Service
         {
             return await _context.Greetings.ToListAsync();
         }
-
+        public async Task<Greeting> GetGreetingByIdAsync(int id)
+        {
+            return await _context.Greetings.FindAsync(id);
+        }
 
         /// <summary>
         /// Save a new greeting synchronously.

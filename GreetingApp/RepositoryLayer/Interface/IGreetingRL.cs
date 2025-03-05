@@ -10,6 +10,8 @@ namespace RepositoryLayer.Interface
             // Other methods
      
         Greeting SaveGreeting(Greeting greeting); // Add this method
+        Task<Greeting> GetGreetingByIdAsync(int id);
+
 
     }
 }

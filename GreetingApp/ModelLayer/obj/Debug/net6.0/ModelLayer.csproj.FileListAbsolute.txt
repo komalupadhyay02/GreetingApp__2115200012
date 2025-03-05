@@ -45,4 +45,4 @@
 /Users/komal/Desktop/GreetingApp/ModelLayer/obj/Debug/net6.0/refint/ModelLayer.dll
 /Users/komal/Desktop/GreetingApp/ModelLayer/obj/Debug/net6.0/ModelLayer.pdb
 /Users/komal/Desktop/GreetingApp/ModelLayer/obj/Debug/net6.0/ref/ModelLayer.dll
-/Users/komal/Desktop/GreetingApp/ModelLayer/obj/Debug/net6.0/ModelLayer.sourcelink.json
+/Users/komal/Desktop/GreetingApp/ModelLayer/obj/Debug/net6.0/ModelLayer.csproj.AssemblyReference.cache

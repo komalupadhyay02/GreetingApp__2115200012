@@ -10,7 +10,8 @@ namespace HelloGreetingApplication.Controllers
     /// Controller providing APIs for the Greeting Application.
     /// </summary>
     [ApiController]
-    [Route("api/[controller]")]
+   
+    [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
     {
         // Dictionary for storing greetings (used for UC1 - Testing different HTTP methods)
@@ -23,6 +24,29 @@ namespace HelloGreetingApplication.Controllers
         {
             _greetingService = greetingService;
         }
+        //UC6
+        [HttpGet("ListAllGreetings")]
+        public async Task<IActionResult> ListAllGreetings()
+        {
+            var greetings = await _greetingService.GetAllGreetingsAsync();
+            if (greetings == null || !greetings.Any())
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "No greetings found.",
+                    Data = null
+                });
+            }
+
+            return Ok(new ResponseModel<IEnumerable<string>>
+            {
+                Success = true,
+                Message = "All greetings retrieved successfully.",
+                Data = greetings.Select(g => g.Message)
+            });
+        }
+
 
         //UC5 code
         [HttpGet("{id}")]

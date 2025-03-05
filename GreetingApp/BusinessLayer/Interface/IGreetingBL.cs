@@ -9,6 +9,7 @@ namespace BusinessLayer.Interface
         Greeting SaveGreeting(Greeting greeting);
         Task<IEnumerable<Greeting>> GetAllGreetingsAsync();
         Task<Greeting> GetGreetingByIdAsync(int id);
+
     }
   
 
